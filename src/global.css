@@ -13,6 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }
 
 :root {
@@ -55,6 +56,20 @@
   --black: #000000;
 
   --white: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--slate-800);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--slate-700);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: var(--slate-500);
 }
 
 body {
@@ -114,12 +129,12 @@ header {
 .navigation-menu-close-button {
   all: unset;
   font-size: 1.5rem;
+  transition: all 400ms;
 
   :hover {
     color: var(--slate-400);
   }
 
-  transition: all 400ms;
 }
 
 .navigation-menu-body {
@@ -161,5 +176,53 @@ header {
   a:hover:after {
     width: 100%;
     left: 0;
+  }
+}
+
+.anime-carousel {
+  width: 100%;
+
+  #carouselExampleCaptions {
+    height: 90vh;
+  }
+
+  img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    aspect-ratio: 9/16;
+  }
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 1.25rem 0.75rem 0;
+  min-height: 100vh;
+
+  h2 {
+    text-align: center;
+    color: var(--slate-200);
+    font-size: 2.25rem;
+  }
+
+
+  .content-news {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news .content-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
