@@ -4,17 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./src/assets/images/logo.svg" type="image/svg">
-  <title>Multiverso News || Seu portal de notícias do mundo Geek</title>
+  <link rel="shortcut icon" href="./images/icons/logo.svg" type="image/svg">
 
-  <link rel="stylesheet" href="./src/global.css">
+  <!-- Work in SEO -->
+  <title>Multiverso News || Seu portal de notícias do mundo Geek</title>
+  <meta name="description"
+    content="Portal de noticias do mundo geek, aqui você pode encontrar notícias das suas séries, animes ou filmes">
+  <meta name="keywords" content="heroes, games, animes, marvel, dc, comics, news, starwars">
+  <meta name="author" content="Gustavo Sales">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./styles/home.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
   <header>
     <div class="site-logo">
-      <img src="./src/assets/images/logo.svg"
+      <img src="./images/icons/logo.svg"
         alt="Logo do site Multiverso News, que é a face do personagem Tanjiro Kamado do anime Kimetsu No Yiaba"
         class="image-logo" />
       <h1 class="site-title">Multiverso News</h1>
@@ -96,47 +104,29 @@
     </div>
   </section>
 
-  <section class="news">
+  <main class="news">
     <h2>Ultimas notícias 🔥</h2>
-    <div class="content-news">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="/src/pages/news1.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="/src/pages/news2.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="/src/pages/news4.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+    <div class="content-news" id="content-news"></div>
+  </main>
+
+  <footer>
+    <div>
+      <p>Siga-nos para mais notícias!</p>
+      <nav>
+        <a href=""><img src="./images/icons/whatsapp-icon.svg"
+            alt="Icone da logo do whatsapp para contato com o criador do blog"></a>
+        <a href=""><img src="./images/icons/instagram-icon.svg"
+            alt="Icone da logo do whatsapp para contato com o criador do blog"></a>
+        <a href=""><img src="./images/icons/linkedin-icon.svg"
+            alt="Icone da logo do whatsapp para contato com o criador do blog"></a>
+        <a href=""><img src="./images/icons/github-icon.svg"
+            alt="Icone da logo do whatsapp para contato com o criador do blog"></a>
+      </nav>
     </div>
-  </section>
+    <p>
+      Jamais, em hipótese alguma, deixe um <b>Vogon</b> ler poesias para você.
+    </p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -144,6 +134,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script type="module" src="./scripts/home.js"></script>
 </body>
 
 </html>
