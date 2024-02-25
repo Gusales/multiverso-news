@@ -1,9 +1,9 @@
 import { news } from "./news.js";
 
-let delay = 300
+let delay = 0
 const contentNews = document.getElementById('content-news')
 news.map(item => {
-  delay += 100
+  delay += 200
   contentNews.innerHTML += `
   <article class="card" style="width: 18rem;" data-aos="fade-up" data-aos-delay="${delay}">
     <img src="${item.image_url.uri}" class="card-img-top" alt="${item.image_url.description}">
