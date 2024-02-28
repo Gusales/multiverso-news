@@ -37,6 +37,7 @@
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     row-gap: 1rem;
+    column-gap: 1.5rem;
 
     h3 {
       font-size: 1.5rem;
@@ -47,11 +48,24 @@
 .card {
   box-shadow: 0 10px 15px -3px rgb(6 182 212 / 0.5);
 
+  overflow: hidden;
+  .card-img-top{
+    &:hover{
+      transform: scale(1.15);
+      transition: transform 700ms;
+
+    }
+  }
+
   .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    position: relative;
+    z-index: 99;
+    background: var(--white);
   }
 }
 
