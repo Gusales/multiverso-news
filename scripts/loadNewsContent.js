@@ -3,7 +3,7 @@ import { news } from "./news.js";
 const newsQuery = new URLSearchParams(window.location.search)
 const newsRef = Object.fromEntries(newsQuery.entries())
 
-const [ newsContent ] = news.filter(item => item.id === newsRef.ref)
+const [newsContent] = news.filter(item => item.id == newsRef.ref)
 console.log(newsContent)
 
 const newsTitleInDocument = document.getElementById('news-title')
