@@ -12,7 +12,7 @@ export const news = [
   {
     id: 2,
     title: 'Última Temporada de Demon Slayer: Kimetsu no Yaiba Promete Conclusão Épica do Arco da Vila dos Ferreiros',
-    content: '',
+    content: 'Após o enorme sucesso nas bilheterias com o filme "Demon Slayer: Mugen Train", que se tornou um fenômeno mundial, os fãs têm outro motivo para comemorar: a confirmação de um novo filme sequencial da aclamada série "Demon Slayer: Kimetsu no Yaiba". Com a promessa de continuar a jornada emocionante de Tanjiro, Nezuko e os Hashiras contra as forças demoníacas, os fãs mal podem esperar para ver qual será o próximo capítulo nessa saga épica. Com a animação deslumbrante e a narrativa envolvente que conquistaram milhões de fãs em todo o mundo, o novo filme de "Demon Slayer" promete mais emoções e aventuras intensas.',
     image_url: {
       uri: './images/banners/demon_slayer_banner.jpg',
       description: ''
@@ -80,3 +80,19 @@ export const news = [
     tags: ['anime']
   }
 ];
+
+export function handleCreateNewNews({ title, content, image_url, image_alt, tags }) {
+  const id = news.length + 1
+  news.push([...news, {
+    id,
+    title,
+    content,
+    image_url: {
+      uri: image_url,
+      description: image_alt
+    },
+    tags
+  }])
+
+  return { id }
+}

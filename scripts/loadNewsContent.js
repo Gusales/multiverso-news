@@ -4,6 +4,7 @@ const newsQuery = new URLSearchParams(window.location.search)
 const newsRef = Object.fromEntries(newsQuery.entries())
 
 const [newsContent] = news.filter(item => item.id == newsRef.ref)
+document.title = `${newsContent.title} || Multiverso News`
 console.log(newsContent)
 
 const newsTitleInDocument = document.getElementById('news-title')

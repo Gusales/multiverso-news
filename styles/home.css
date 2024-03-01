@@ -29,8 +29,6 @@
     font-size: 2.5rem;
   }
 
-
-
   .content-news {
     width: 100%;
     display: grid;
@@ -49,11 +47,11 @@
   box-shadow: 0 10px 15px -3px rgb(6 182 212 / 0.5);
 
   overflow: hidden;
-  .card-img-top{
-    &:hover{
+
+  .card-img-top {
+    &:hover {
       transform: scale(1.15);
       transition: transform 700ms;
-
     }
   }
 
@@ -69,8 +67,61 @@
   }
 }
 
+.content-news-controls {
+  margin-top: 1rem;
+  width: 100%;
 
+  display: flex;
+  justify-content: center;
 
+  .button-create-news {
+    max-width: fit-content;
+    padding: 0.5rem 1rem;
+    display: block;
+
+    background: var(--cyan-600);
+    font-weight: bold;
+    border-color: var(--cyan-800);
+
+    &:hover {
+      background: var(--cyan-800);
+      outline: 0;
+      border-color: var(--cyan-800);
+    }
+  }
+}
+
+form .modal-body {
+  min-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  .input-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.toast-header {
+  display: flex;
+  align-items: center;
+
+  p {
+    flex: 1;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+}
 
 @media screen and (max-width: 1279px) {
   .news .content-news {

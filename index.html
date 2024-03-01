@@ -85,6 +85,8 @@
     </section>
   </div>
 
+  <!-- Menu de navegação -->
+
   <section class="offcanvas offcanvas-end navigation-menu" tabindex="-1" id="offcanvasRight"
     aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header navigation-header">
@@ -109,10 +111,79 @@
     </div>
   </section>
 
+  <!-- Conteúdo principal da página -->
+
   <main class="news">
     <h2>Ultimas notícias 🔥</h2>
     <div class="content-news" id="content-news"></div>
 
+    <!-- Controles do conteúdo principal -->
+    <div class="content-news-controls">
+      <button type="button" class="btn btn-success button-create-news" id="open-form-modal">
+        Crie sua própria notícia!
+      </button>
+    </div>
+
+    <!-- Modal de criação de uma nova notícia -->
+    <section class="modal fade" id="create-news-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Envie sua própria notícia!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="" class="create-news-form" id="create-news">
+            <div class="modal-body">
+              <div class="input-field">
+                <label for="news-title">Título da notícia</label>
+                <input type="text" name="news-title" id="news-title"
+                  placeholder="Ex: Michael Kyle PROANO? Professor de instituição de ensino..." class="form-control"
+                  required />
+              </div>
+
+              <div class="input-field">
+                <label for="image-url">Cole o link da imagem da notícia: </label>
+                <input type="text" name="image-url" id="image-url" placeholder="Ex: https://link-da-imagem.com.br"
+                  class="form-control" required />
+              </div>
+
+              <div class="input-field">
+                <label for="image_alt">
+                  Descreva sua imagem aqui, para pessoas com baixa ou nenhuma visão pode saber o que
+                  está nela:
+                </label>
+                <textarea class="form-control" name="image_alt" id="image_alt" cols="30" rows="5"
+                  placeholder="Ex: Imagem incrível do professor Gabs Azevedo enquanto leciona..." required></textarea>
+              </div>
+
+              <div class="input-field">
+                <label for="news-content">Escreva o conteúdo da notícia aqui:</label>
+                <textarea class="form-control" name="news-content" id="news-content" cols="30" rows="08"
+                  placeholder="Ator famoso é confundido com professor Gabriel do Instituto PROA" required></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-success">Enviar notícia</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerta de nova notícia adicionada -->
+    <section class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="createdNewsToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <p>Nova notícia!</p>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Sua notícia foi publicada com sucesso!
+        </div>
+      </div>
+    </section>
 
   </main>
 
