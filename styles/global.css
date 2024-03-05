@@ -26,6 +26,7 @@
   --slate-600: #475569;
   --slate-700: #334155;
   --slate-800: #1e293b;
+  --slate-800-80: rgba(30, 41, 59, 0.8);
   --slate-900: #0f172a;
   --slate-950: #020617;
 
@@ -74,10 +75,11 @@
 
 body {
   background: var(--zinc-900);
+  overflow-x: hidden;
 }
 
 header {
-  min-width: 100%;
+  min-width: 100vw;
   background: var(--zinc-800);
   color: var(--white);
   padding: 1rem;
@@ -92,7 +94,7 @@ header {
   z-index: 99;
 }
 
-main{
+main {
   min-height: 90vh;
 }
 
@@ -227,7 +229,7 @@ footer {
         width: 1.75rem;
         height: 1.75rem;
 
-        &:hover{
+        &:hover {
           transform: scale(1.15);
           transition: transform 400ms;
         }
@@ -238,13 +240,13 @@ footer {
 
 
 @media screen and (max-width: 1279px) {
-  .navigation-menu{
+  .navigation-menu {
     width: 50vw;
   }
 }
 
 @media screen and (max-width: 468px) {
-  .navigation-menu{
+  .navigation-menu {
     min-width: 100vw;
   }
 }

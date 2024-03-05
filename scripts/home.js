@@ -45,10 +45,10 @@ form.addEventListener('submit', (e) => {
   contentNews.innerHTML += `
   <article class="card" style="width: 18rem;" data-aos="fade-up" data-aos-delay="${delay}">
     <img src="${newsImageUrl.value}" loading="lazy" class="card-img-top" alt="${newsImageAlt.value}">
-    <div class="card-body">
+    <main class="card-body">
       <h3 class="card-title">${newsTitle.value}</h3>
       <a href="./pages/news.html?ref=${id}" class="btn btn-link">Veja mais</a>
-    </div>
+    </main>
   </article>
   `
 

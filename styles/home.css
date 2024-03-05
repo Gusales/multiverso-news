@@ -3,15 +3,45 @@
 .anime-carousel {
   width: 100%;
 
-  #carouselExampleCaptions {
-    height: 90vh;
-  }
+  position: relative;
 
-  img {
+  .carousel-image-anime {
     width: 100%;
     height: 90vh;
     object-fit: cover;
     aspect-ratio: 9/16;
+  }
+
+  .anime-carousel-icon {
+    .anime-carousel-icon-blur {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 99;
+      backdrop-filter: blur(5px);
+      background: var(--slate-700);
+      padding: 0.5rem;
+
+      img {
+        width: 150px;
+        height: 79px;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+  .carousel-caption {
+    background: var(--slate-800-80);
+    padding: 0.5rem;
+
+    h5 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -142,5 +172,19 @@ form .modal-body {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .carousel-caption h5.carousel-caption-title {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p.carousel-caption-text {
+    font-size: 1rem;
+  }
+
+  .carousel-caption {
+    padding: 0 0.75rem 0;
   }
 }
