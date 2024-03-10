@@ -2,7 +2,7 @@
 ![App Screenshot](./.github/preview.png)
 
 ## 📖 Sobre a atividade:
-Eu, Gustavo Sales, bravo(a) estudante da Guilda de Desenvolvedores Geek, fui convocado(a) para embarcar em uma jornada extraordinária! Minha missão? criar um portal de notícias do mundo geek, onde as histórias do multiverso serão compartilhadas com estilo, paixão e maestria técnica. O portal não só é um local de informação, mas também um refúgio para todos os aventureiros da cultura nerd.
+Eu, Gustavo Sales, bravo estudante da Guilda de Desenvolvedores Geek, fui convocado(a) para embarcar em uma jornada extraordinária! Minha missão? criar um portal de notícias do mundo geek, onde as histórias do multiverso serão compartilhadas com estilo, paixão e maestria técnica. O portal não só é um local de informação, mas também um refúgio para todos os aventureiros da cultura nerd.
 
 Combinei minhas habilidades em HTML, CSS, SEO e acessibilidade, muito café e aula do grande mestre Gabriel Azevedo para forjar um portal inesquecível!
 
